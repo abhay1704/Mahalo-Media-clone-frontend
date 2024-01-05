@@ -1,0 +1,156 @@
+#join-title {
+  display: block;
+}
+
+.container {
+  width: 100%;
+  text-align: left;
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+
+.card {
+  max-width: 450px;
+  height: 300px;
+  /* height: calc(160% / 3); */
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+}
+
+.title {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+  width: 100%;
+  background-color: #44b5f1c7;
+  font-family: var(--primaryFont);
+  font-size: 1.2rem;
+}
+
+.apply {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+  width: 100%;
+  background-color: black;
+}
+
+.btn--wrapper {
+  display: inline-block;
+  width: 30%;
+  height: 50px;
+  font-size: 1.8rem;
+  border: solid 3.2px #4d7cd396;
+  border-radius: 5px;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.apply button:hover {
+  color: #f15e1a;
+}
+
+.btn--stylish span {
+  /* position: absolute; */
+  /* width: fit-content;
+    height: fit-content; */
+  display: block;
+  color: rgb(60, 170, 230);
+}
+
+.btn--stylish {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 10% 20%;
+  width: 100%;
+  height: 100%;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: rgb(60, 170, 230);
+  border: none;
+  transition: all 1s ease;
+  display: inline-block;
+}
+
+.btn--stylish span:nth-child(1) {
+  position: absolute;
+  width: 1.5px;
+  isolation: isolate;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #f15e1a;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.4s;
+}
+
+.btn--stylish:hover span:nth-child(1) {
+  top: 0;
+  transform: scaleY(1);
+}
+
+.btn--stylish span:nth-child(2) {
+  position: absolute;
+  width: 100%;
+  isolation: isolate;
+  top: 0;
+  left: 0;
+  height: 1.5px;
+  background-color: #f15e1a;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s;
+}
+
+.btn--stylish:hover span:nth-child(2) {
+  transform: scaleX(1);
+}
+
+.btn--stylish span:nth-child(3) {
+  position: absolute;
+  width: 1.5px;
+  isolation: isolate;
+  top: 0;
+  right: 0;
+  height: 100%;
+  background-color: #f15e1a;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.4s;
+  transition-delay: 0.4s;
+}
+
+.btn--stylish:hover span:nth-child(3) {
+  top: 0;
+  transform: scaleY(1);
+}
+
+.btn--stylish span:nth-child(4) {
+  position: absolute;
+  width: 100%;
+  isolation: isolate;
+  bottom: 0;
+  left: 0;
+  height: 1.5px;
+  background-color: #f15e1a;
+  transform: scaleX(0);
+  transform-origin: top;
+  transition: transform 0.4s;
+  transition-delay: 0.4s;
+}
+
+.btn--stylish:hover span:nth-child(4) {
+  transform: scaleX(1);
+}
